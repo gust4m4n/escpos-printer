@@ -1,0 +1,76 @@
+name: escpos_printer
+description: "ESCPOS Printer - Demo app for printing receipts to a Bluetooth thermal printer"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
+  path_provider: ^2.1.5
+  share_plus: ^12.0.0
+  image: ^4.3.0
+  image_picker: ^1.1.2
+  flutter_bluetooth_printer: ^2.20.0
+  esc_pos_utils_plus: ^2.0.1
+  qr: ^3.0.1
+  permission_handler: ^12.0.0
+  flutter_blue_plus: ^2.0.0
+  app_settings: ^8.0.3
+  crypto: ^3.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+# Launcher icon generated from the app icon artwork.
+# Regenerate with: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/appicon.png"
+  android: true
+  min_sdk_android: 21
+  adaptive_icon_background: "#FAD932"
+  adaptive_icon_foreground: "assets/appicon.png"
+  adaptive_icon_foreground_inset: 20
+
+# Native splash: app icon centered on the icon's yellow background.
+# Regenerate with: dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#FAD932"
+  image: assets/appicon.png
+  android_gravity: center
+  fullscreen: false
+  android: true
+  ios: false
+  web: false
+  android_12:
+    color: "#FAD932"
+    image: assets/appicon.png
+    icon_background_color: "#FAD932"
